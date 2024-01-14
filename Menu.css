@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.lm-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),  url('img/res1.avif');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+strong{
+    color: #fff3f3;
+    font-size: 50px;
+    margin-left: 30px;
+}
+.lm-nav{
+   
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    padding: 10px;
+    background-color: rgba(7, 7, 15, 0.8);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover{
+    
+    background-color: rgba(52, 55, 58, 0.719);
+}
+.lm-h2{
+    width: 150px;
+    color: white;
+}
+.lm-a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.lm-nav-links{
+    flex: 1;
+    text-align: right;
+}
+.lm-nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.lm-nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.lm-nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.lm-nav-links ul li:hover::after{
+    width: 100%;
+}
+.lm-text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.lm-text-box h1{
+    font-size: 62px;
+
+}
+.lm-text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+.lm-hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.lm-hero-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+
+.lm-body{
+    background:white;
+    font-family: 'Poppins' sans-serif;
+}
+.lm-menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.lm-heading{
+    background: rgba(15, 15, 36, 0.8);
+    color: azure;
+    margin-bottom: 30px ;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+
+}
+.lm-heading>h1{
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.lm-heading>h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.lm-food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: .2s ease-in-out;
+}
+.lm-food-items:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 9px 3px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 1px 9px 3px rgba(0,0,0,0.51);
+    box-shadow: 0px 1px 9px 3px rgba(0,0,0,0.51);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.lm-food-items img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+.lm-h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.lm-details{
+    padding: 30px;
+    display: grid;
+    grid-row-gap: 15px;
+}
+.lm-details-sub{
+    display: grid;
+
+}
+.lm-details-sub>h5{
+    font-weight: 600;
+    font-size: 25px;
+    margin: auto;
+}
+.lm-price{
+    text-align: right;
+}
+.lm-details>p{
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 600;
+    /* align-self: stretch; */
+    align-items: center;
+}
+.lm-details>button{
+   
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+.lm-details>h3{
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.lm-footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(4,9,30,0.7);
+}
+.lm-footer h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.lm-footer p{
+    color: #fff3f3;
+}

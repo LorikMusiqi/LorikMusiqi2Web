@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>UMAI</title>
+        <link rel="stylesheet" href="Home.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="img/Umai.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4nBEkZuFmkUK99YpIxCmbBO4I5dPvJb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-pzjw8c+YK4aWXLmr8XsUvRs5/sqRSjCzPBJ3UePf6xJqu/GtvH+2vzfISL1TG" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4nBEkZuFmkUK99YpIxCmbBO4I5dPvJb" crossorigin="anonymous"></script>
+    </head>    
+<body>
+    <section class="lm-header">
+        <nav>
+            <h2><strong>UMAI</strong></h2>
+            <div class="lm-nav-links" id="lm-navLinks">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./Menu.html">Menu</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="./Login.html">Login</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+        <div class="lm-text-box">
+            <h1>World's Most Famous Restaurant</h1>
+            <p>Coming to us will make our day better and for sure will make your's too.
+              <br>  Welcome to UMAI
+            </p>
+            <a href="" class="lm-hero-btn">Visit us to know More</a>
+        </div>
+    </section>
+   
+    <section class="lm-campus">
+        <h1>Our Top Locations</h1>
+        <div class="lm-row">
+            <div class="lm-campus-col">
+                <img src="img/res1.avif" alt="spot bon">
+                <div class="lm-layer">
+                    <h3>VUSHTRRI</h3>
+                </div>
+            </div>
+            <div class="lm-campus-col">
+                <img src="img/res2.webp" alt="spot bon">
+                <div class="lm-layer">
+                    <h3>PRISHTINE</h3>
+                </div>
+            </div>
+            <div class="lm-campus-col">
+                <img src="img/res3.jpg" alt="spot bon">
+                <div class="lm-layer">
+                    <h3>TIRANE</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lm-testimonials">
+        <h1>What Our Clients Say</h1>
+        <p>Their rewiews about out lovely Restaurant</p>
+        <div class="lm-row">
+            <div class="lm-testimonial-col">
+                <img src="img/luta.jpg" alt="personi1">
+                <div>
+                    <p>This was one of, if not the best Restaurant I have ever been
+                        thier food is delicious and flavourful and the Restaurant is classy
+                        looking and stuff
+                        love it.
+                        <h3>Lutfi Musiqi</h3>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </p>
+                </div>
+            </div>
+            <div class="lm-testimonial-col">
+                <img src="img/beh.jpg" alt="personi2">
+                <div>
+                    <p>I loved their food, it was a 10/10 experience, the services was soo good, the 
+                        waiter was so kind to us. And won't forget the Restaurant was
+                        stunning.
+                        <h3>Behar Surdulli</h3>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lm-cta">
+        <h1>Enroll For Our Various Types Of Food<br>Anywhere From World</h1>
+        <a href="Contact.html" class="lm-hero-btn">CONTACT US</a>
+    </section>
+    <section class="lm-footer">
+        <h1>UMAI</h1>
+        <p>Copyright © 2007 - 2023 Umai.</p>
+    </section>
+    <script>
+        var lmNavLinks = document.getElementById("lm-navLinks");
+
+        function showMenu(){
+            lmNavLinks.style.right="0";
+        }
+        function hideMenu(){
+            lmNavLinks.style.right="-200px";
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

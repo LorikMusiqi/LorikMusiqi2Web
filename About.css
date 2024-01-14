@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.lm-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),  url('img/res1.avif');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+strong{
+    color: #fff3f3;
+    font-size: 50px;
+    margin-left: 30px;
+}
+.lm-nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lm-h2 {
+    width: 250px;
+    color: #fff3f3;
+}
+
+.lm-nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.lm-nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.lm-nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.lm-nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.lm-nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.lm-text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.lm-text-box h1 {
+    font-size: 62px;
+}
+
+.lm-text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.lm-hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.lm-hero-btn:hover {
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+
+.lm-footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(4,9,30,0.7);
+}
+
+.lm-footer h1 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.lm-footer p {
+    color: #fff3f3;
+}
+
+.lm-h1 {
+    text-align: center;
+    margin: 50px auto 100px;
+    color: white;
+}
+
+.lm-main {
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.lm-service {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 20px -15px black;
+    z-index: 1;
+    transition: transform .7s;
+}
+
+.lm-service-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 10px solid red;
+    margin: -90px auto 0;
+    background: white;
+}
+
+.lm-service-logo img {
+    width: 50px;
+    margin-top: 30px;
+}
+
+.lm-service h4 {
+    height: 35px;
+    width: 80%;
+    background: white;
+    margin: 50px auto;
+    position: relative;
+}
+
+.lm-service h4::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, white,#f44336);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.lm-service h4::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #f44336,white);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.lm-shadowDivADS {
+    height: 200px;
+    width: 80%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px black;
+    transition: transform .7s;
+}
+
+.lm-shadowUnderADS {
+    height: 200px;
+    width: 64%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+    box-shadow: 0 0 20px -15px black;
+    transition: transform .7s;
+}
+
+.lm-main:hover .lm-service {
+    transform: translateY(-50px);
+}
+
+.lm-main:hover .lm-shadowDivADS {
+    transform: translateY(-25px);
+}
+
+.lm-main:hover .lm-shadowUnderADS {
+    transform: translateY(-12.5px);
+}
